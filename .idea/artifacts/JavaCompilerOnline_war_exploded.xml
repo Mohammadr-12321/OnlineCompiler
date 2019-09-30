@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="JavaCompilerOnline:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaCompilerOnline_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="JavaCompilerOnline/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="JavaCompilerOnline" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib" />
+          <element id="library" level="project" name="java-json" />
+          <element id="library" level="project" name="gson-2.8.2" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

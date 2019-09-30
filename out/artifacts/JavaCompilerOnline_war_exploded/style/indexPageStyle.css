@@ -1,0 +1,30 @@
+/* unvisited li */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+.green{color:green;
+    font-size: 15px;
+    font-family:verdana;}
+.orange{color:orange;
+    font-size: 22px;
+    font-family:serif;
+}
+.pink{font-size: 40px;
+    font-family:Georgia;
+    color:#8b0000;
+}

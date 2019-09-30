@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>register</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link rel="stylesheet" type="text/css" href="style/registerPageStyle.css"/>
+
+    <script>
+        function showHideProfessorForm() {
+            if(document.getElementById('isProfessor').checked){
+                document.getElementById('professor').style.display='block';
+            }
+            else{
+                document.getElementById('professor').style.display='none';
+            }
+        }
+    </script>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="simple">CODE<span class="logo_colour">CAMP</span><img src="logo.png" width="50" height="50"></a></h1>
+          <h2>Teaching the world how to code.</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="index.jsp">Home</a></li>
+          <li><a href="code_editor.jsp">Practise</a></li>
+          <li><a href="login.jsp">Login</a></li>
+          <li class="selected"><a href="register.html">Register</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+<div class="main">
+<h1>REGISTRATION FORM</h1></div>
+<div id="fors">
+    <form action="RegisterServlet" method="post" enctype="multipart/form-data">
+        <div id="student">
+            <table>
+                <tr>
+                    <td >UserName:</td><td><input type="text" name="user_name" placeholder="enter Your User Name" required /></td>
+                </tr>
+                     <td >Name:</td><td><input type="text" name="user_fullName" placeholder="enter Your Full Nname" required /></td>
+                </tr>
+
+                <tr>
+                    <td >Gender:</td><td class="m"><input type="radio" name="user_gender" value="female" required="required" /> female </td>
+                </tr>
+
+                <tr>
+                    <td></td><td class="m">  <input type="radio" name="user_gender" value="male" required="required"/> male </td>
+                </tr>
+
+                <tr>
+                    <td >College:</td><td><input type="text" name="user_college" required/></td>
+                </tr>
+
+                <tr>
+                    <td >Email id:</td><td><input type="email" name="user_email" required/></td>
+                </tr>
+
+                <tr>
+                    <td >LinkedIn id:</td><td><input type="text" name="user_linkedin" /></td>
+                </tr>
+
+                <tr>
+                    <td >GitHub id:</td><td><input type="text" name="user_github" /></td>
+                </tr>
+
+                <tr>
+                    <td >Contact Number:</td><td><input type="text" name="user_contact" /></td>
+                </tr>
+
+                <tr>
+                    <td >Password:</td><td><input type="password" name="user_password" required/></td>
+                </tr>
+
+                <tr>
+                    <td >Upload Image:</td>
+                    <td><input type="file" name="file_data"/></td>
+                </tr>
+            </table>
+        </div>
+        <table>
+            <tr>
+                <td> Are You Professor ? </td>
+                <td> <input type="checkbox" id="isProfessor" name="isProfessor" value="yes" onclick="showHideProfessorForm()"/></td>
+            </tr>
+        </table>
+
+
+        <div id="professor">
+            <table>
+                <tr>
+                    <td> Select Your Academic Studies : </td>
+                    <td>Bachelor <input type="text" name="Bachelor"  placeholder="Enter Your Field Study"></td>
+                    <td>Master <input type="text" name="Master"  placeholder="Enter Your Field Study"></td>
+                    <td>Phd <input type="text" name="Phd"  placeholder="Enter Your Field Study"></td>
+                </tr>
+                <tr>
+                    <td>Select Your Lectures : </td>
+                    <td>Advanced Programming    <input type="checkbox" name="AdvancedProgramming" value="AdvancedProgramming"></td>
+                    <td>Fundamental Programming <input type="checkbox" name="FundamentalProgramming" value="FundamentalProgramming"></td>
+                    <td>Data Structure          <input type="checkbox" name="DataStructure" value="DataStructure"></td>
+                    <td>Design Algorithms       <input type="checkbox" name="DesignAlgorithm" value="DesignAlgorithm"></td>
+                </tr>
+            </table>
+        </div>
+        <script>
+            document.getElementById('professor').style.display='none';
+        </script>
+        <table>
+            <tr>
+                <td ><input type="submit" value="SUBMIT"/></td><td ><input type="reset" value="RESET"/></td>
+            </tr>
+        </table>
+        <br/> <br/>
+
+</form>
+</div>
+
+   <!-- <div id="content_footer"></div> -->
+    <div id="footer">
+      Copyright &copy; 2019
+    </div>
+  </div>
+</body>
+</html>
